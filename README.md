@@ -64,8 +64,9 @@ tsc filename.ts
 const person: [string, number] = ['Nikhil', 7];
 ```
 
-Drawback:  > 	At run-time js treat them as js arrays. TS doesn't prevent .push().
-		   >	It can break the fixed len assumption
+### Drawback of tuple:  
+> At run-time js treat them as js arrays. TS doesn't prevent .push().
+>	It can break the fixed len assumption
 ---
 ```ts
 person.push(10); // This doesn't cause compile time error.
